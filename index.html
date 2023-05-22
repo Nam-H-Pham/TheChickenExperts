@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Chicken Experts</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!--
+
+Template 2076 Zentro
+
+http://www.tooplate.com/view/2076-zentro
+
+-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- preloader section -->
+<section class="preloader">
+	<div class="sk-spinner sk-spinner-pulse"></div>
+</section>
+
+<!-- navigation section -->
+<section class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"  aria-label="navbar toggle">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">THE CHICKEN EXPERTS</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#gallery" class="smoothScroll">FOOD GALLERY</a></li>
+				<li><a href="#menu" class="smoothScroll">MENU</a></li>
+				<li><a href="#reviews" class="smoothScroll">REVIEWS</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+				<li><a href="#footer" class="smoothScroll">HOURS</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<!-- home section -->
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h1>THE CHICKEN EXPERTS</h1>
+				<h2>FRESH &amp; FLAVOURFUL</h2>
+				<a href="#gallery" class="smoothScroll btn btn-default">LEARN MORE</a>
+			</div>
+		</div>
+	</div>		
+</section>
+
+
+<!-- gallery section -->
+<section id="gallery" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Food Gallery</h1>
+				<hr>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+				<a href="images/Souvlaki.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/Souvlaki.jpg" alt="Souvlaki dish"></a>
+				<div>
+					<h3>Souvlaki</h3>
+					<span>Chicken / Lamb</span>
+				</div>
+				<a href="images/Charcoal Chicken.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/Charcoal Chicken.jpg" alt="Charcoal chicken dish"></a>
+				<div>
+					<h3>Charcoal Chicken</h3>
+					<span>Whole / Half / Quarter Chicken</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<a href="images/Chicken and Chips.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/Chicken and Chips.jpg" alt="Chicken and chips dish"></a>
+				<div>
+					<h3>Chicken and Chips</h3>
+					<span>1 / 2 / 3 / 4 Piece chicken and chips</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
+				<a href="images/Nuggets.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/Nuggets.jpg" alt="Chicken nuggets dish"></a>
+				<div>
+					<h3>Nuggets</h3>
+					<span>6 Nuggets &amp Chips</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- menu section -->
+<section id="menu" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Menu</h1>
+				<hr>
+			</div>
+
+			<div id="menuselect" class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<input onclick="filterMenu('All')" type="button" value="All" aria-label="All">
+				<input onclick="filterMenu('Charcoal-Chicken')" type="button" value="Charcoal Chicken" aria-label="Charcoal Chicken">
+				<input onclick="filterMenu('Fried-Chicken-Packs')" type="button" value="Fried Chicken Packs" aria-label="Fried Chicken Packs">
+				<input onclick="filterMenu('Charcoal-Chicken-Packs')" type="button" value="Charcoal Chicken Packs" aria-label="Charcoal Chicken">
+				<input onclick="filterMenu('Charcoal-Souvlaki')" type="button" value="Charcoal Souvlaki" aria-label="Charcoal Souvlaki">
+				<input onclick="filterMenu('Chicken-Nugget-Pack')" type="button" value="Chicken Nugget Pack" aria-label="Chicken Nugget Pack">
+				<input onclick="filterMenu('Snacks')" type="button" value="Snacks" aria-label="Snacks">
+				<input onclick="filterMenu('Salads')" type="button" value="Salads" aria-label="Salads">
+				<input onclick="filterMenu('Chicken-Rolls')" type="button" value="Chicken Rolls" aria-label="Chicken Rolls">
+				<input onclick="filterMenu('Chicken-Schnitzel')" type="button" value="Chicken Schnitzel" aria-label="Chicken Schnitzel">
+			</div>
+			
+			<dish id = "Charcoal-Chicken" class="col-md-6 col-sm-6">
+				<h4>Charcoal Chicken</h4>
+				<ul class="leaders">
+					<li>
+						<h5><span>Whole Chicken</span> <span>$14.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Half Chicken</span> <span>$8.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Quarter Chicken</span> <span>$4.90</span></h5>
+					</li>
+				</ul>
+			</dish>
+			
+			<dish id = "Fried-Chicken-Packs" class="col-md-6 col-sm-6">
+				<h4>Fried Chicken Packs</h4>
+				<h5>Chicken and Chips</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>1 piece</span> <span>$4.90</span></h5>
+					</li>
+					<li>
+						<h5><span>2 piece</span> <span>$6.90</span></h5>
+					</li>
+					<li>
+						<h5><span>3 piece</span> <span>$8.90</span></h5>
+					</li>
+					<li>
+						<h5><span>4 piece</span> <span>$10.90</span></h5>
+					</li>
+				</ul>
+
+				<ul class="leaders">
+					<li>
+						<h5><span>Single pieces of chicken</span> <span>$2.70</span></h5>
+					</li>
+				</ul>
+			</dish>
+
+			<dish id = "Charcoal-Chicken-Packs" class="col-md-6 col-sm-6">
+				<h4>Charcoal Chicken Packs</h4>
+
+				<h5>Chicken and Chips</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Quarter Chicken</span> <span>$6.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Half Chicken</span> <span>$10.90</span></h5>
+					</li>
+				</ul>
+
+				<h5>Lunch Pack</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Quarter Chicken</span> <span>$6.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Half Chicken</span> <span>$10.90</span></h5>
+					</li>
+				</ul>
+
+				<h5>Hot Pack </h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Quarter Chicken</span> <span>$9.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Half Chicken</span> <span>$10.90</span></h5>
+					</li>
+				</ul>
+
+				<h5>Slimmers Pack</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Quarter Chicken</span> <span>$10.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Half Chicken</span> <span>$13.90</span></h5>
+					</li>
+				</ul>
+
+				<h5>Charcoal Pack</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Quarter Chicken</span> <span>$9.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Half Chicken</span> <span>$12.90</span></h5>
+					</li>
+				</ul>
+
+				<h5>Hawaiian Pack</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Quarter Chicken</span> <span>$10.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Half Chicken</span> <span>$13.90</span></h5>
+					</li>
+				</ul>
+			</dish>
+
+			<dish id = "Charcoal-Souvlaki" class="col-md-6 col-sm-6">
+				<h4>Charcoal Souvlaki</h4>
+				<h5>Souvlaki</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Lamb</span> <span>$10.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Chicken</span> <span>$10.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Open Plate</span> <span>$15.90</span></h5>
+					</li>
+				</ul>
+
+				<ul class="leaders">
+					<li>
+						<h5><span>Gyros and chips pack</span> <span>$12.90</span></h5>
+					</li>
+				</ul>
+
+				<h5>Gyros Serving</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Small</span> <span>$10.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Medium</span> <span>$13.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Large</span> <span>$17.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Extra Large</span> <span>$26.00</span></h5>
+					</li>
+				</ul>
+			</dish>
+			
+			<dish id = "Chicken-Nugget-Pack" class="col-md-6 col-sm-6">
+				<h4>Chicken Nugget Pack</h4>
+				<ul class="leaders">
+					<li>
+						<h5><span>6 Nuggets & Chips</span> <span>$5.90</span></h5>
+					</li>
+				</ul>
+			</dish>
+
+			<dish id = "Chicken-Schnitzel" class="col-md-6 col-sm-6">
+				<h4>Chicken Schnitzel</h4>
+				<ul class="leaders">
+					<li>
+						<h5><span>Chicken Schnitzel Roll</span> <span>$6.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Schnitzel Salad Roll - Lettuce, Tomato, Onion, Mayo</span> <span>$7.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Schnitzel Dinner - Schnitzel, Potatoes, Peas, Gravy</span> <span>$10.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Schnitzel Pack - Schnitzel, Chips, Gravy</span> <span>$9.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Plain Schnitzel</span> <span>$4.90</span></h5>
+					</li>
+				</ul>
+			</dish>
+			
+			<dish id = "Snacks" class="col-md-6 col-sm-6">
+				<h4>Snacks</h4>
+				<h5>Chips</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Small</span> <span>$2.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Medium</span> <span>$4.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Large</span> <span>$6.80</span></h5>
+					</li>
+				</ul>
+
+				<h5>Gravy Or Peas</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Mini</span> <span>$1.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Small</span> <span>$3.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Medium</span> <span>$4.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Large</span> <span>$5.80</span></h5>
+					</li>
+				</ul>
+				<ul class="leaders">
+					<li>
+						<h5><span>Gravy</span> <span>$0.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Roast Potato</span> <span>$1.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Potato Cake</span> <span>$1.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Dim Sim</span> <span>$1.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Chicken Dim Sim</span> <span>$1.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Chicken Nugget</span> <span>$0.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Chicken Schaslick</span> <span>$3.80</span></h5>
+					</li>
+					<li>
+						<h5><span>Chicken Strip</span> <span>$2.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Croquette</span> <span>$2.00</span></h5>
+					</li>
+					<li>
+						<h5><span>Pineapple or Banana Fritter</span> <span>$2.50</span></h5>
+					</li>
+					<li>
+						<h5><span>Fish (Flake)</span> <span>$4.50</span></h5>
+					</li>
+					<li>
+						<h5><span>Fish and Chips Pack</span> <span>$6.50</span></h5>
+					</li>
+				</ul>
+			</dish>
+			
+			<dish id = "Salads" class="col-md-6 col-sm-6">
+				<h4>Salads</h4>
+				<h5>Coleslaw Salad, Potato Salad, Bean Salad, Thai Chicken Salad, Pasta Salad, Greek Salad, Caesar Salad, Fruit Salad, Chefs Salad</h5>
+				<ul class="leaders">
+					<li>
+						<h5><span>Small</span> <span>$4.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Medium</span> <span>$6.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Large</span> <span>$7.90</span></h5>
+					</li>
+					<li>
+						<h5><span>X Large</span> <span>$10.90</span></h5>
+					</li>
+				</ul>
+			</dish>
+
+			<dish id = "Chicken-Rolls" class="col-md-6 col-sm-6">
+				<h4>Chicken Rolls</h4>
+				<ul class="leaders">
+					<li>
+						<h5><span>Traditional - Chicken, Cheese, Mayo</span> <span>$6.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Hawaiian - Chicken, Cheese, Mayo, Pineapple</span> <span>$7.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Chicken Salad - Chicken, Lettuce, Tomato, Onion, Mayo</span> <span>$7.90</span></h5>
+					</li>
+					<li>
+						<h5><span>Chicken Strip Wrap - 2 Chicken Strips, Lettuce, Tomato, Onion, Choice of Sauce</span> <span>$6.90</span></h5>
+					</li>
+				</ul>
+			</dish>
+			
+		</div>
+	</div>
+</section>		
+
+
+<!-- reviews section -->
+<section id="reviews" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Reviews</h1>
+				<hr>
+			</div>
+
+
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+				<img src="images/trip advisor reviews.png" class="img-responsive center-block" alt="trip advisor stars">
+				<h4>Trip Advisor</h4>
+				<h5>"Best spicy chicken burger in Melbourne. The thigh fillet was super juicy and succulent. Great value for money."</h5>
+			</div>
+			
+			
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+				<img src="images/google reviews.png" class="img-responsive center-block" alt="google reviews stars">
+				<h4>Google Reviews</h4>
+				<h5>"Excellent service and quality of food offered."</h5>
+			</div>
+
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+				<img src="images/true local reviews.png" class="img-responsive center-block" alt="uber reviews stars">
+				<h4>True Local</h4>
+				<h5>"Absolutely amazing chicken and chips, been there a few times and all times it's been great."</h5>
+			</div>
+
+
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+				<img src="images/uber reviews.png" class="img-responsive center-block" alt="uber reviews stars">
+				<h4>Uber Eats</h4>
+				<h5>"The food is always hot and fresh. A great local chicken shop in Mount Waverley."</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- contact section -->
+<section id="contact" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10 col-sm-12 text-center">
+				<h1 class="heading">Contact Us</h1>
+				<hr>
+			</div>
+			<div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+				<form action="#" method="post">
+					<div class="col-md-6 col-sm-6">
+						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
+				  </div>
+					<div class="col-md-6 col-sm-6">
+						<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+				  </div>
+					<div class="col-md-12 col-sm-12">
+						<textarea name="message" rows="8" class="form-control" id="message" placeholder="Message"></textarea>
+					</div>
+					<div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+						<input name="submit" type="submit" class="form-control" id="submit" value="Make an Enquiry" aria-label="Submit">
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2 col-sm-1"></div>
+		</div>
+	</div>
+</section>
+
+
+<!-- footer section -->
+<footer id="footer"class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Contact Info.</h2>
+				<div class="ph">
+					<p><i class="fa fa-phone"></i> Phone</p>
+					<h4>03 9888 2774</h4>
+				</div>
+				<div class="address">
+					<p><i class="fa fa-map-marker"></i> Our Location</p>
+					<h4>23 Hamilton Place Mount Waverley VIC 3149</h4>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp"></div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Open Hours</h2>
+					<p>Sunday <span>11:00 AM - 8:00 PM</span></p>
+					<p>Mon-Fri <span>10:30 AM - 8:30 PM</span></p>
+					<p>Saturday <span>10:30 AM - 8:30 PM</span></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- copyright section -->
+<section id="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h3>The Chicken Experts</h3>
+				<hr>
+                <h5>Mount Waverley Charcoal Chicken</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- JAVASCRIPT JS FILES -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="js/menu-sort.js"></script>
+
+</body>
+</html>
